@@ -1,4 +1,4 @@
-.PHONY: all build run fmt
+.PHONY: all build run fmt test
 
 all: build run fmt
 
@@ -12,3 +12,6 @@ fmt:
 
 run:
 	@./hash
+
+test:
+	@go test ./test -v
